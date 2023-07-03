@@ -351,7 +351,7 @@ def instance_to_text_blocksworld(problem, get_plan, data, shuffle=False):
             PLAN += data['actions'][act_name].format(*objs) + "\n"
         PLAN += "[PLAN END]\n"
 
-    return INIT, GOAL, PLAN, data
+    return INIT, GOAL, PLAN
 
 
 def get_plan_as_text(data, given_plan=None):
